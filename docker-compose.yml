@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  latex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: quantum-presentation-latex:latest
+    container_name: quantum-latex
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: /bin/bash -c "pdflatex -interaction=nonstopmode presentation.tex && pdflatex -interaction=nonstopmode presentation.tex"
+
