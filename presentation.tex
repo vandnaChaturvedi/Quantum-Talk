@@ -11,11 +11,12 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{multicol}
 
 % Title information
-\title{Applications and Indian Trends in Quantum Computing and Quantum-AI}
+\title{Quantum Readiness in India}
 \author{Vandna Chaturvedi }
-\institute{Center for Devlopment of Advance Computing(CDAC, Hyderabad)}
+\institute{CDAC, Hyderabad}
 \date{\today}
 
 \begin{document}
@@ -24,20 +25,11 @@
 \frame{\titlepage}
 
 % Outline
-\begin{frame}
-\frametitle{Outline}
-\begin{columns}[T,onlytextwidth]
-    \begin{column}{0.48\textwidth}
-        \begin{block}{This session}
-            \tableofcontents[sections={1-2}]
-        \end{block}
-    \end{column}
-    \begin{column}{0.48\textwidth}
-        \begin{block}{Later topics}
-            \tableofcontents[sections={3-4}]
-        \end{block}
-    \end{column}
-\end{columns}
+\begin{frame}{Outline}
+
+\begin{multicols}{2}
+        \tableofcontents
+\end{multicols}
 \end{frame}
 
 % Section 1: Moore's Law Saturation and Rise of Qubits
@@ -45,22 +37,26 @@
 
 \begin{frame}
 \frametitle{Moore's Law: The Saturation Point}
-\begin{itemize}
-    \item \textbf{Moore's Law}: Transistor density doubles every 18-24 months
-    \item \textbf{Current Status}: Physical limits being reached
-    \begin{itemize}
-        \item Atomic-scale limitations (5nm, 3nm processes)
-        \item Quantum tunneling effects at nanoscale
-        \item Heat dissipation challenges
-        \item Power consumption issues
-    \end{itemize}
-    \item \textbf{Classical Computing Bottlenecks}:
-    \begin{itemize}
-        \item Sequential processing limitations
-        \item Exponential complexity problems
-        \item Scaling challenges for certain algorithms
-    \end{itemize}
-\end{itemize}
+\begin{columns}
+    \begin{column}{0.56\textwidth}
+        \begin{itemize}
+            \item \textbf{Moore's Law}: Transistor density doubles every 18-24 months
+            \item \textbf{Moore's Law is slowing DOWN}: 
+            \begin{itemize}
+                \item Physical limits being reached
+                \item Post Silicon Era is QUANTUM ERA
+                \item Tech to make devices smaller, Where classical physics has no longer suitable model for the law of physics
+                \item Transistors can't be made smaller due to laws of Quantum Mechanics start to take over
+                \item Heat dissipation challenges
+                \item Power consumption issues
+            \end{itemize}
+        \end{itemize}
+    \end{column}
+    \begin{column}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{pic/Screenshot 2025-11-10 at 11.55.52 PM.png}
+    \end{column}
+\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -986,11 +982,11 @@
 \begin{frame}
 \frametitle{Thank You}
 \begin{center}
+\begin{figure}
 \includegraphics[width=0.3\textwidth]{pic/Vijay_Bhatkar_Portrait_Photo.jpg}
-
 \caption{"The 21st century belongs to India" - Vijay Bhatkar}
 \label{fig:Vijay_Bhatkar_Portrait_Photo}
-
+\end{figure}
 \end{center}
 \end{frame}
 
